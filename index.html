@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="contentenedor">
+        <h1 class="titulo">Iniciar Sesion</h1>
+        <form onsubmit="ValidarSesion(event)">
+            <p class="Nombre__Usuario">
+            <label>Nombre de Usuario</label>
+            <input type="text" id="usuario" required>
+            </p>
+            <p class="Credencial">
+            <label>Contraseña</label>
+            <input type="password" id="contraseña" required>
+            <p id="mensaje-validacion"></p>
+            </p>
+            <p class="IniciarSesion">
+                <input class="Boton__IniciarSesion" type="submit" value="Iniciar Sesion">
+                <button class="Boton__Limpiar" onclick="Limpiar()"> Limpiar</button>
+            </p>
+        </form>
+    <p id="Mensaje"> </p>
+    </h1>
+    <script src="index.js"></script>
+
+</body>
+</html>
